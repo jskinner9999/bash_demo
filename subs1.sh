@@ -4,8 +4,6 @@ echo "Start"
 
 . ./env.sh
 
-# while true
-# do
 OUT=$(curl -s "https://ps.pndsn.com/v2/subscribe/${SUBKEY}/${CHAN}/0?uuid=${UUID}&tt=0")
 
 TT=$(echo ${OUT} | jq .t.t | tr -d \")
@@ -24,7 +22,6 @@ CH1=$(echo ${DATAOUT} | jq .m | jq .[0].c | tr -d \")
 
 # echo "Channel ${CH1}"
 
-# MSG=$(echo ${DATAOUT} | jq .m | jq .[0].d.message | tr -d \")
 MSG=$(echo ${DATAOUT} | jq .m | jq .[0].d | tr -d \")
 
 

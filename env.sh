@@ -4,4 +4,3 @@ CHAN='rest1'
 UUID='JIM06'
 MIN=1
 MAX=50
-

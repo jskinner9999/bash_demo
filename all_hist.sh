@@ -2,6 +2,7 @@
 
 
 . ./env.sh
+
 declare -a EPOCH_LIST
 declare -a EPOCH_LIST_FULL
 

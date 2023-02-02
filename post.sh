@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ ! $1 ]
 then
 echo 'no arg 1'

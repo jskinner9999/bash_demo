@@ -1,10 +1,6 @@
 #!/bin/bash
 
-echo "Start"
-
 . ./env.sh
-
-# DATAOUT=$(curl -s "https://ps.pndsn.com/v3/history/sub-key/${SUBKEY}/channel/${CHAN}?uuid=${UUID}&include_meta=false&stringtoken=true&string_message_token=true&include_message_type=true&include_uuid=true&max=100&start=16727583791770996")
 
 #v3
 DATAOUT=$(curl -s "https://ps.pndsn.com/v3/history/sub-key/${SUBKEY}/channel/${CHAN}?uuid=${UUID}&include_meta=false&stringtoken=true&string_message_token=true&include_message_type=true&include_uuid=true&max=100")
