@@ -23,5 +23,3 @@ newctime=$(echo ${ctime} | cut -c 1-10)
 ./Print_PN_Time.sh "${ctime}"
 
 
-# https://ps.pndsn.com/time/0?uuid=jim123
-
