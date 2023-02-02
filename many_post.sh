@@ -15,6 +15,7 @@ read -p "Enter a number between ${MIN1} and ${MAX1}: " num1
     echo "number out of range, try again"
   fi
 done
+
 while :; do
 read -p "Enter a number between ${MIN1} and ${MAX1}: " num2
   [[ $num2 =~ ^[0-9]+$ ]]| { echo "2Enter a valid number"; continue; }
